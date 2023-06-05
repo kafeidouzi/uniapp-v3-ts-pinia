@@ -36,7 +36,8 @@
     "build:quickapp-webview": "uni build -p quickapp-webview",
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "vue-tsc --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3070720230316001",
@@ -75,6 +76,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "pinia": "^2.0.36",
+    "pre-commit": "^1.2.2",
     "typescript": "^4.9.4",
     "unplugin-auto-import": "^0.16.4",
     "vite": "4.0.4",
@@ -89,7 +91,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged", 
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
