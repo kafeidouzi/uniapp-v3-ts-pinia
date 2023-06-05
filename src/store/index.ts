@@ -1,0 +1,1 @@
+import { default as useUserStore } from './moudles/user'
