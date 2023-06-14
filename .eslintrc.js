@@ -2,7 +2,7 @@
  * @Author: gaozhanfei gaozhanfei@jryghq.com
  * @Date: 2023-06-05 16:43:29
  * @LastEditors: gaozhanfei gaozhanfei@jryghq.com
- * @LastEditTime: 2023-06-05 17:38:30
+ * @LastEditTime: 2023-06-07 16:22:01
  * @FilePath: /miniprogram-pinxuan-vue3/src/.eslintrc.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -60,6 +60,8 @@ module.exports = {
     ],
     'vue/v-bind-style': ['error', 'shorthand'],
     'vue/v-on-style': ['error', 'shorthand'],
-    'no-useless-escape': 0
+    'no-useless-escape': 0,
+    "vue/multi-word-component-names":"off",
+    "@typescript-eslint/no-explicit-any": ["off"]
   }
 }
